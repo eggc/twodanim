@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="sprite.css">
     <script type="text/javascript" src="sprite.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </head>
   <body>
 
@@ -21,8 +22,23 @@
     <div class="js-template sprite-container">
       <div class="js-sprite"></div>
       <small class="js-text"></small>
-      <code class="js-code"></code>
+      <pre><code class="js-code prettyprint"></code></pre>
     </div>
+
+    <h1>Javascript</h1>
+    <pre><code class="prettyprint">const node = document.getElementById("js-target")
+    const sprite1 = new Sprite("sprite-character1", "sprite-animation1-1")
+    const sprite2 = new Sprite("1", "1-2")
+    node.appendChild(sprite1.node)
+    node.appendChild(sprite2.node)
+    setInterval(()=>{
+        if(sprite1.animationName == "sprite-animation1-1"){
+            sprite1.setAnimationName("5-3")
+        } else {
+            sprite1.setAnimationName("1-1")
+        }
+    }, 1000)</code></pre>
+    <div id="js-target" class="animations-container"></div>
 
     <script type="text/javascript" src="index.js"></script>
   </body>
