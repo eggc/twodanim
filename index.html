@@ -26,7 +26,13 @@
     </div>
 
     <h1>Javascript</h1>
-    <pre><code class="prettyprint"></code></pre>
+    <pre><code class="prettyprint">const node = document.getElementById("js-target")
+const sprite = new Sprite(0, 0)
+node.appendChild(sprite.node)
+setInterval(()=>{
+    const n = (sprite.animationIndex) % (Sprite.LAST_ANIMATION_INDEX + 1) + 1
+    sprite.setAnimation(n)
+}, 500)</code></pre>
     <div id="js-target" class="animations-container"></div>
 
     <script type="text/javascript" src="index.js"></script>

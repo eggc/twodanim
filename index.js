@@ -24,15 +24,10 @@
     template.parentNode.removeChild(template)
 
     const node = document.getElementById("js-target")
-    const sprite1 = new Sprite(0, 0)
-    const sprite2 = new Sprite(0, 2)
-    node.appendChild(sprite1.node)
-    node.appendChild(sprite2.node)
+    const sprite = new Sprite(0, 0)
+    node.appendChild(sprite.node)
     setInterval(()=>{
-        if(sprite1.animationIndex == 0){
-            sprite1.setAnimation(14)
-        } else {
-            sprite1.setAnimation(0)
-        }
-    }, 1000)
+        const n = (sprite.animationIndex) % (Sprite.LAST_ANIMATION_INDEX + 1) + 1
+        sprite.setAnimation(n)
+    }, 500)
 })()

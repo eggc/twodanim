@@ -1,4 +1,5 @@
 class Sprite {
+    static LAST_ANIMATION_INDEX = 17
     constructor(characterIndex, animationIndex) {
         this.node = document.createElement("div")
         this.node.classList.add("sprite")
