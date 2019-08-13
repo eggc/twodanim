@@ -2,6 +2,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="sprite.css">
+    <script type="text/javascript" src="sprite.js"></script>
   </head>
   <body>
 
@@ -18,7 +19,7 @@
     <p>次に <a href="sprite.css">sprite.css</a> を読み込み、div 要素に CSS クラスを与えるとループアニメーションが実行されます。</p>
     <div class="js-animations-container animations-container"></div>
     <div class="js-template sprite-container">
-      <div class="js-sprite sprite character1"></div>
+      <div class="js-sprite"></div>
       <small class="js-text"></small>
       <code class="js-code"></code>
     </div>
@@ -40,14 +41,14 @@
               const y = Math.floor(index / 3) + 1
               const animationName = "sprite-animation" + y + "-" + x
               const newNode = template.cloneNode(true)
+              newNode.classList.remove("js-template")
               const textNode = newNode.getElementsByClassName("js-text")[0]
               const codeNode = newNode.getElementsByClassName("js-code")[0]
               const spriteNode = newNode.getElementsByClassName("js-sprite")[0]
-              newNode.classList.remove("js-template")
-              spriteNode.classList.remove("js-sprite")
-              spriteNode.classList.add(animationName)
+              const sprite = new Sprite(animationName, "character1")
+              spriteNode.appendChild(sprite.node)
               textNode.appendChild(document.createTextNode(title))
-              codeNode.appendChild(document.createTextNode(spriteNode.outerHTML))
+              codeNode.appendChild(document.createTextNode(sprite.node.outerHTML))
               animationContainer.appendChild(newNode)
           })
           template.parentNode.removeChild(template)
