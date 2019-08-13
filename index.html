@@ -4,20 +4,23 @@
     <link rel="stylesheet" type="text/css" href="sprite.css">
   </head>
   <body>
-    <h1>format</h1>
-    <div><img src="img/01_11_02_img02.png"></div>
-    <a href="https://tkool.jp/mv/course/04.html">RPGツクールMV サイドビュー用　味方キャラクター(img/sv_actors)</a>
 
-    <h1>source image</h1>
+    <h1>RPGツクールMV用 スタイルシート</h1>
+    <h2>使い方</h2>
+    <p>まず、下記のサンプルに沿った画像ファイルを準備します。</p>
+    <div><img src="img/01_11_02_img02.png"></div>
+    <div><a href="https://tkool.jp/mv/course/04.html">RPGツクールMV サイドビュー用　味方キャラクター(img/sv_actors)</a></div>
+
+    <p>ここではゆるドラシルの素材を使って試してみます。</p>
     <div><img src="img/1056010302.png"></div>
     <a href="http://yurudora.com/tkool/">ゆるドラシル RPGツクール素材提供サイト</a>
 
-    <h1>animations</h1>
+    <p>次に <a href="sprite.css">sprite.css</a> を読み込み、div 要素に CSS クラスを与えるとループアニメーションが実行されます。</p>
     <div class="js-animations-container animations-container"></div>
-
     <div class="js-template sprite-container">
-      <p class="js-text"></p>
       <div class="js-sprite sprite character1"></div>
+      <small class="js-text"></small>
+      <code class="js-code"></code>
     </div>
 
     <script>
@@ -38,10 +41,13 @@
               const animationName = "sprite-animation" + y + "-" + x
               const newNode = template.cloneNode(true)
               const textNode = newNode.getElementsByClassName("js-text")[0]
+              const codeNode = newNode.getElementsByClassName("js-code")[0]
               const spriteNode = newNode.getElementsByClassName("js-sprite")[0]
               newNode.classList.remove("js-template")
+              spriteNode.classList.remove("js-sprite")
               spriteNode.classList.add(animationName)
               textNode.appendChild(document.createTextNode(title))
+              codeNode.appendChild(document.createTextNode(spriteNode.outerHTML))
               animationContainer.appendChild(newNode)
           })
           template.parentNode.removeChild(template)
