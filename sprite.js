@@ -11,13 +11,13 @@ class Sprite {
 
     constructor(characterIndex, animationIndex) {
         this.node = document.createElement("div")
-        this.node.classList.add("sprite")
+        this.node.classList.add("twodanim-sprite")
         this.setAnimation(animationIndex)
         this.setCharacter(characterIndex)
     }
 
     setAnimation(animationIndex) {
-        const newName = "sprite-animation" + animationIndex
+        const newName = "twodanim-sprite-animation" + animationIndex
         this.animationIndex = animationIndex
         this.node.classList.remove(this.animationName)
         this.node.classList.add(newName)
@@ -25,7 +25,7 @@ class Sprite {
     }
 
     setCharacter(characterIndex) {
-        const newName = "sprite-character" + characterIndex
+        const newName = "twodanim-sprite-character" + characterIndex
         this.characterIndex = characterIndex
         this.node.classList.remove(this.characterName)
         this.node.classList.add(newName)
