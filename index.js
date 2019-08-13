@@ -19,7 +19,7 @@
     const sprite = new Sprite(0, 0)
     node.appendChild(sprite.node)
     setInterval(()=>{
-        const n = (sprite.animationIndex) % (Sprite.LAST_ANIMATION_INDEX + 1) + 1
+        const n = (sprite.animationIndex + 1) % (Sprite.LAST_ANIMATION_INDEX + 1)
         sprite.setAnimation(n)
-    }, 500)
+    }, 1000)
 })()
