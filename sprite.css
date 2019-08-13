@@ -303,3 +303,8 @@
   animation-duration: 1s;
   animation-timing-function: step-end;
   animation-iteration-count: infinite; }
+
+.sprite {
+  width: 64px;
+  height: 64px;
+  overflow: hidden; }

@@ -16,10 +16,4 @@ body {
     width: 100px;
 }
 
-.sprite {
-    width: 64px;
-    height: 64px;
-    overflow: hidden;
-}
-
 .character1 { background: url('./img/1056010302.png'); }
