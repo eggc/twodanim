@@ -1,0 +1,25 @@
+$x-positions: 0px, -64px, -128px, -192px, -256px, -320px, -384px, -448px, -512px;
+$y-positions: 0px, -64px, -128px, -192px, -256px, -320px;
+
+@each $y in $y-positions {
+    $y-index: index($y-positions, $y);
+    @each $x-index in 1, 2, 3 {
+        $animation-name: sprite-keyframes-#{$y-index}-#{$x-index};
+        $class-name: sprite-animation#{$y-index}-#{$x-index};
+
+        @keyframes #{$animation-name} {
+            0%   { background-position: nth($x-positions, 3 * $x-index - 2) $y; }
+            25%  { background-position: nth($x-positions, 3 * $x-index - 1) $y; }
+            50%  { background-position: nth($x-positions, 3 * $x-index)     $y; }
+            75%  { background-position: nth($x-positions, 3 * $x-index - 1) $y; }
+            100% { background-position: nth($x-positions, 3 * $x-index - 2) $y; }
+        }
+
+        .#{$class-name} {
+            animation-name: $animation-name;
+            animation-duration: 1s;
+            animation-timing-function: step-end;
+            animation-iteration-count: infinite;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+body {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.animations-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sprite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.sprite {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.character1 { background: url('./img/1056010302.png'); }

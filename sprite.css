@@ -1,0 +1,305 @@
+@keyframes sprite-keyframes-1-1 {
+  0% {
+    background-position: 0px 0px; }
+  25% {
+    background-position: -64px 0px; }
+  50% {
+    background-position: -128px 0px; }
+  75% {
+    background-position: -64px 0px; }
+  100% {
+    background-position: 0px 0px; } }
+.sprite-animation1-1 {
+  animation-name: sprite-keyframes-1-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-1-2 {
+  0% {
+    background-position: -192px 0px; }
+  25% {
+    background-position: -256px 0px; }
+  50% {
+    background-position: -320px 0px; }
+  75% {
+    background-position: -256px 0px; }
+  100% {
+    background-position: -192px 0px; } }
+.sprite-animation1-2 {
+  animation-name: sprite-keyframes-1-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-1-3 {
+  0% {
+    background-position: -384px 0px; }
+  25% {
+    background-position: -448px 0px; }
+  50% {
+    background-position: -512px 0px; }
+  75% {
+    background-position: -448px 0px; }
+  100% {
+    background-position: -384px 0px; } }
+.sprite-animation1-3 {
+  animation-name: sprite-keyframes-1-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-2-1 {
+  0% {
+    background-position: 0px -64px; }
+  25% {
+    background-position: -64px -64px; }
+  50% {
+    background-position: -128px -64px; }
+  75% {
+    background-position: -64px -64px; }
+  100% {
+    background-position: 0px -64px; } }
+.sprite-animation2-1 {
+  animation-name: sprite-keyframes-2-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-2-2 {
+  0% {
+    background-position: -192px -64px; }
+  25% {
+    background-position: -256px -64px; }
+  50% {
+    background-position: -320px -64px; }
+  75% {
+    background-position: -256px -64px; }
+  100% {
+    background-position: -192px -64px; } }
+.sprite-animation2-2 {
+  animation-name: sprite-keyframes-2-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-2-3 {
+  0% {
+    background-position: -384px -64px; }
+  25% {
+    background-position: -448px -64px; }
+  50% {
+    background-position: -512px -64px; }
+  75% {
+    background-position: -448px -64px; }
+  100% {
+    background-position: -384px -64px; } }
+.sprite-animation2-3 {
+  animation-name: sprite-keyframes-2-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-3-1 {
+  0% {
+    background-position: 0px -128px; }
+  25% {
+    background-position: -64px -128px; }
+  50% {
+    background-position: -128px -128px; }
+  75% {
+    background-position: -64px -128px; }
+  100% {
+    background-position: 0px -128px; } }
+.sprite-animation3-1 {
+  animation-name: sprite-keyframes-3-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-3-2 {
+  0% {
+    background-position: -192px -128px; }
+  25% {
+    background-position: -256px -128px; }
+  50% {
+    background-position: -320px -128px; }
+  75% {
+    background-position: -256px -128px; }
+  100% {
+    background-position: -192px -128px; } }
+.sprite-animation3-2 {
+  animation-name: sprite-keyframes-3-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-3-3 {
+  0% {
+    background-position: -384px -128px; }
+  25% {
+    background-position: -448px -128px; }
+  50% {
+    background-position: -512px -128px; }
+  75% {
+    background-position: -448px -128px; }
+  100% {
+    background-position: -384px -128px; } }
+.sprite-animation3-3 {
+  animation-name: sprite-keyframes-3-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-4-1 {
+  0% {
+    background-position: 0px -192px; }
+  25% {
+    background-position: -64px -192px; }
+  50% {
+    background-position: -128px -192px; }
+  75% {
+    background-position: -64px -192px; }
+  100% {
+    background-position: 0px -192px; } }
+.sprite-animation4-1 {
+  animation-name: sprite-keyframes-4-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-4-2 {
+  0% {
+    background-position: -192px -192px; }
+  25% {
+    background-position: -256px -192px; }
+  50% {
+    background-position: -320px -192px; }
+  75% {
+    background-position: -256px -192px; }
+  100% {
+    background-position: -192px -192px; } }
+.sprite-animation4-2 {
+  animation-name: sprite-keyframes-4-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-4-3 {
+  0% {
+    background-position: -384px -192px; }
+  25% {
+    background-position: -448px -192px; }
+  50% {
+    background-position: -512px -192px; }
+  75% {
+    background-position: -448px -192px; }
+  100% {
+    background-position: -384px -192px; } }
+.sprite-animation4-3 {
+  animation-name: sprite-keyframes-4-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-5-1 {
+  0% {
+    background-position: 0px -256px; }
+  25% {
+    background-position: -64px -256px; }
+  50% {
+    background-position: -128px -256px; }
+  75% {
+    background-position: -64px -256px; }
+  100% {
+    background-position: 0px -256px; } }
+.sprite-animation5-1 {
+  animation-name: sprite-keyframes-5-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-5-2 {
+  0% {
+    background-position: -192px -256px; }
+  25% {
+    background-position: -256px -256px; }
+  50% {
+    background-position: -320px -256px; }
+  75% {
+    background-position: -256px -256px; }
+  100% {
+    background-position: -192px -256px; } }
+.sprite-animation5-2 {
+  animation-name: sprite-keyframes-5-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-5-3 {
+  0% {
+    background-position: -384px -256px; }
+  25% {
+    background-position: -448px -256px; }
+  50% {
+    background-position: -512px -256px; }
+  75% {
+    background-position: -448px -256px; }
+  100% {
+    background-position: -384px -256px; } }
+.sprite-animation5-3 {
+  animation-name: sprite-keyframes-5-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-6-1 {
+  0% {
+    background-position: 0px -320px; }
+  25% {
+    background-position: -64px -320px; }
+  50% {
+    background-position: -128px -320px; }
+  75% {
+    background-position: -64px -320px; }
+  100% {
+    background-position: 0px -320px; } }
+.sprite-animation6-1 {
+  animation-name: sprite-keyframes-6-1;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-6-2 {
+  0% {
+    background-position: -192px -320px; }
+  25% {
+    background-position: -256px -320px; }
+  50% {
+    background-position: -320px -320px; }
+  75% {
+    background-position: -256px -320px; }
+  100% {
+    background-position: -192px -320px; } }
+.sprite-animation6-2 {
+  animation-name: sprite-keyframes-6-2;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
+
+@keyframes sprite-keyframes-6-3 {
+  0% {
+    background-position: -384px -320px; }
+  25% {
+    background-position: -448px -320px; }
+  50% {
+    background-position: -512px -320px; }
+  75% {
+    background-position: -448px -320px; }
+  100% {
+    background-position: -384px -320px; } }
+.sprite-animation6-3 {
+  animation-name: sprite-keyframes-6-3;
+  animation-duration: 1s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite; }
