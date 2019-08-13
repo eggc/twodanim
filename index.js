@@ -16,7 +16,7 @@
         const textNode = newNode.getElementsByClassName("js-text")[0]
         const codeNode = newNode.getElementsByClassName("js-code")[0]
         const spriteNode = newNode.getElementsByClassName("js-sprite")[0]
-        const sprite = new Sprite("sprite-character1", animationName)
+        const sprite = new Sprite("sprite-character0", animationName)
         spriteNode.appendChild(sprite.node)
         textNode.appendChild(document.createTextNode(title))
         codeNode.appendChild(document.createTextNode(sprite.node.outerHTML))
@@ -25,8 +25,8 @@
     template.parentNode.removeChild(template)
 
     const node = document.getElementById("js-target")
-    const sprite1 = new Sprite("sprite-character1", "sprite-animation0")
-    const sprite2 = new Sprite("1", "2")
+    const sprite1 = new Sprite("sprite-character0", "sprite-animation0")
+    const sprite2 = new Sprite("0", "2")
     node.appendChild(sprite1.node)
     node.appendChild(sprite2.node)
     setInterval(()=>{
