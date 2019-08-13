@@ -1,28 +1,24 @@
 class Sprite {
-    constructor(characterName, animationName) {
+    constructor(characterIndex, animationIndex) {
         this.node = document.createElement("div")
         this.node.classList.add("sprite")
-        this.setAnimationName(animationName)
-        this.setCharacterName(characterName)
+        this.setAnimation(animationIndex)
+        this.setCharacter(characterIndex)
     }
 
-    setAnimationName(animationName) {
-        if(!animationName.startsWith("sprite-animation")) {
-            animationName = "sprite-animation" + animationName
-        }
-
+    setAnimation(animationIndex) {
+        const newName = "sprite-animation" + animationIndex
+        this.animationIndex = animationIndex
         this.node.classList.remove(this.animationName)
-        this.node.classList.add(animationName)
-        this.animationName = animationName
+        this.node.classList.add(newName)
+        this.animationName = newName
     }
 
-    setCharacterName(characterName) {
-        if(!characterName.startsWith("sprite-character")) {
-            characterName = "sprite-character" + characterName
-        }
-
+    setCharacter(characterIndex) {
+        const newName = "sprite-character" + characterIndex
+        this.characterIndex = characterIndex
         this.node.classList.remove(this.characterName)
-        this.node.classList.add(characterName)
-        this.characterName = characterName
+        this.node.classList.add(newName)
+        this.characterName = newName
     }
 }
