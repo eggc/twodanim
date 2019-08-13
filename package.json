@@ -1,0 +1,15 @@
+{
+  "name": "twodanim",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://egg-chicken.github.io/2danim/",
+  "dependencies": {},
+  "scripts": {
+    "build": ""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5"
+  },
+  "browserslist": []
+}
