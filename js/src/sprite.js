@@ -36,3 +36,5 @@ Sprite.ANIMATION_TITLES = [
     "ダメージ", "魔法", "睡眠",
     "回避", "アイテム", "戦闘不能"
 ]
+
+export default Sprite
