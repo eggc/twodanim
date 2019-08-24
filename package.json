@@ -1,20 +1,23 @@
 {
-  "name": "twodanim",
-  "version": "0.0.0",
-  "private": true,
-  "homepage": "https://egg-chicken.github.io/2danim/",
-  "dependencies": {},
-  "scripts": {
-    "build-js": "babel js/src/ --out-dir js/dist/",
-    "combine-js": "browserify js/dist/index.js > index.js",
-      "build": "npm-run-all build-js combine-js"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "browserify": "^16.5.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "browserslist": []
+    "name": "twodanim",
+    "version": "0.0.0",
+    "private": true,
+    "homepage": "https://egg-chicken.github.io/2danim/",
+    "dependencies": {},
+    "scripts": {
+        "build-js": "babel js/src/ --out-dir js/dist/",
+        "combine-js": "browserify js/dist/index.js > index.js",
+        "build-css": "npx node-sass css/src/ --output css/dist/",
+        "combine-css": "cat css/dist/* > index.css",
+        "build": "npm-run-all build-js combine-js build-css"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "browserify": "^16.5.0",
+        "node-sass": "^4.12.0",
+        "npm-run-all": "^4.1.5"
+    },
+    "browserslist": []
 }

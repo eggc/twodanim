@@ -1,0 +1,24 @@
+body {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+code {
+    font-family: Courier;
+}
+
+.animations-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sprite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.twodanim-sprite-character0 { background: url('./img/1056010302.png'); }
