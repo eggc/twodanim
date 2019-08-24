@@ -1,3 +1,3 @@
-# 2danim
+# twodanim
 
-see https://egg-chicken.github.io/2danim/
+see https://eggc.github.io/twodanim/
